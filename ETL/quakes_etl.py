@@ -6,8 +6,8 @@ from pyspark.sql.functions import *
 # Creating the spark session
 spark = SparkSession\
     .builder\
-    .master(['local[2]'])\
-    .appName('quakes_etl')\
+    .master('local[4]')\
+    .appName('quake_etl')\
     .config('spark.jars.packages', 'org.mongodb.spark:mongo-spark-connector_2.12:2.4.1')\
     .getOrCreate()
 
