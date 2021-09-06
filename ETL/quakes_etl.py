@@ -74,5 +74,4 @@ df_quake_freq.write.format('mongo')\
 print(df_quake_freq.show(5))
 print(df_load.show(5))
 
-print('INFO: Job ran successfully')
-print('')
+print('Job ran successfully')
