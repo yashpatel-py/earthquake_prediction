@@ -12,7 +12,7 @@ spark = SparkSession\
     .getOrCreate()
 
 # Load the dataset
-df_load = spark.read.csv(r'C:\1_My_things\1. Sem 7\BDAD\database.csv', header=True)
+df_load = spark.read.csv('database.csv', header=True)
 
 # Remove all fields we don't need
 lst_dropped_columns = [
